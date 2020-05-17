@@ -12,12 +12,12 @@
  * @package jjfresh-website
  */
 
-namespace JJ_Fresh
+namespace JJ_Fresh;
 
 /**
  * The current version of the theme.
  */
-define( 'AIR_LIGHT_VERSION', '5.1.2' );
+define( 'JJ_FRESH_VERSION', '5.1.2' );
 
 /**
  * Theme settings

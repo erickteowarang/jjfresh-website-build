@@ -11,7 +11,7 @@
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  */
 
-namespace JJ_Fresh
+namespace JJ_Fresh;
 
 ?>
 

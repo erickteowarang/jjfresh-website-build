@@ -10,7 +10,7 @@
  * @package jjfresh-website
  */
 
-namespace JJ_Fresh
+namespace JJ_Fresh;
 
 /**
  * Restrict blocks to only allowed blocks in the settings

@@ -9,7 +9,7 @@
  * @package jjfresh-website
  */
 
-namespace JJ_Fresh
+namespace JJ_Fresh;
 
 // Get the page id (can be something else than the page id)
 $have_rows_id = get_modular_rows_id();

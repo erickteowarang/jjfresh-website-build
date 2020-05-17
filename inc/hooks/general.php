@@ -9,7 +9,7 @@
  * @Last Modified time: 2020-02-20 13:48:02
  */
 
-namespace JJ_Fresh
+namespace JJ_Fresh;
 
 /**
  * Register widget area.

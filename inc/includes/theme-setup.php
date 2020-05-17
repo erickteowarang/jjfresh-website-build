@@ -9,7 +9,7 @@
  * @Last Modified time: 2020-02-20 14:20:18
  **/
 
-namespace JJ_Fresh
+namespace JJ_Fresh;
 
 function theme_setup() {
 

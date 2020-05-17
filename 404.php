@@ -9,7 +9,7 @@
  * @link https://codex.wordpress.org/Creating_an_Error_404_Page
  */
 
-namespace JJ_Fresh
+namespace JJ_Fresh;
 
 get_header();
 

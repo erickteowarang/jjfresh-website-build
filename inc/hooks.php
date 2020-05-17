@@ -5,7 +5,7 @@
  * @package jjfresh-website
  */
 
-namespace JJ_Fresh
+namespace JJ_Fresh;
 
 /**
  * General hooks

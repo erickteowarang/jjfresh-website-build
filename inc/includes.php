@@ -9,7 +9,7 @@
  * @package jjfresh-website
  */
 
-namespace JJ_Fresh
+namespace JJ_Fresh;
 
 // Theme setup
 require get_theme_file_path( '/inc/includes/theme-setup.php' );

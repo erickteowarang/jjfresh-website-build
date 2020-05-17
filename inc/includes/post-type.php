@@ -9,7 +9,7 @@
  * @Last Modified time: 2020-02-20 13:45:58
  */
 
-namespace JJ_Fresh
+namespace JJ_Fresh;
 
 /**
  * A base for Post Type creation

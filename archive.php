@@ -9,7 +9,7 @@
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  */
 
-namespace JJ_Fresh
+namespace JJ_Fresh;
 
 get_header();
 
