@@ -7,7 +7,7 @@
  * @package jjfresh-website
  */
 
-namespace Air_Light;
+namespace JJ_Fresh
 
 if ( ! function_exists( 'wp_body_open' ) ) {
 	/**

@@ -9,7 +9,7 @@
  * @Last Modified time: 2020-02-20 13:48:46
  */
 
-namespace Air_Light;
+namespace JJ_Fresh
 
 /**
  * Move jQuery to footer

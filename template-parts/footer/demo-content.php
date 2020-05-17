@@ -5,7 +5,7 @@
  * @package jjfresh-website
  */
 
-namespace Air_Light;
+namespace JJ_Fresh
 
 ?>
 

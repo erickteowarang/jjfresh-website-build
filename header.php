@@ -4,14 +4,11 @@
  *
  * This is the template that displays all of the <head> section and everything up until <div id="content">
  *
- * @Date:   2019-10-15 12:30:02
- * @Last Modified by:   Roni Laukkarinen
- * @Last Modified time: 2020-02-21 13:30:49
  * @package jjfresh-website
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  */
 
-namespace Air_Light;
+namespace JJ_Fresh
 
 ?>
 <!doctype html>

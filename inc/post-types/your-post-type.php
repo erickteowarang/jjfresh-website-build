@@ -7,7 +7,7 @@
  * @Last Modified time: 2020-02-18 15:07:08
  **/
 
-namespace Air_Light;
+namespace JJ_Fresh
 
 /**
  * Registers the Your Post Type post type.

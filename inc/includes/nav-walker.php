@@ -15,7 +15,7 @@
  * @package jjfresh-website
  */
 
-namespace Air_Light;
+namespace JJ_Fresh
 
 /**
  * A custom WordPress nav walker class, using the WordPress built in menu manager.

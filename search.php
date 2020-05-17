@@ -10,7 +10,7 @@
  * @package jjfresh-website
  */
 
-namespace Air_Light;
+namespace JJ_Fresh
 
 get_header();
 

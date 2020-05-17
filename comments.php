@@ -12,7 +12,7 @@
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  */
 
-namespace Air_Light;
+namespace JJ_Fresh
 
  /*
  * If the current post is protected by a password and

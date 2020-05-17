@@ -7,7 +7,7 @@
  * @Last Modified time: 2020-02-18 15:06:07
  */
 
-namespace Air_Light;
+namespace JJ_Fresh
 
 /**
  * Registers the Your Taxonomy taxonomy.
