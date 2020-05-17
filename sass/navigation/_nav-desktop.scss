@@ -8,14 +8,14 @@ $absolute-navigation: true;
 $nav-desktop-background-color: $color-default-background;
 $hover-intent: .3s;
 $nav-links: (
-  'color': $color-white,
-  'hover-color': $color-white,
+  'color': black,
+  'hover-color': black,
   'font-weight': 700,
   'font-size': 1.6rem
 );
 $nav-dropdown-links: (
-  'color': $color-links,
-  'hover-color': $color-cyan,
+  'color': black,
+  'hover-color': black,
   'font-weight': 400,
   'font-size': 1.4rem
 );
@@ -58,12 +58,12 @@ $submenu-dropdown-toggle-hover: (
     // Main level links
     .nav-primary > ul > li > a,
     .nav-primary > ul > li > button {
-      color: #fff;
+      color: black;
       position: relative;
     }
 
     .nav-primary > ul > li > a:hover {
-      color: #fff;
+      color: black;
     }
   }
 }
@@ -152,9 +152,6 @@ $submenu-dropdown-toggle-hover: (
 } // @if $enable-animations == true
 
 @media only screen and (min-width: $responsivenav) {
-  .nav-container {
-    background: $nav-desktop-background-color;
-  }
   // Use display block based hovers if no animations enabled
   @if $enable-animations == false {
     // Enable hovers
