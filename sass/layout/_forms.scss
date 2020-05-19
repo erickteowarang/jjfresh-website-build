@@ -6,51 +6,75 @@
 // ------------------------------------------------------------
 
 // Buttons
-.content-area,
-.site-footer {
-  button,
-  .button,
-  input[type="reset"],
-  input[type="submit"],
-  input[type="button"] {
-    font-size: 1.6rem;
-    background: $color-links;
+button,
+.button,
+.btn,
+input[type="reset"],
+input[type="submit"],
+input[type="button"] {
+  font-size: 1.6rem;
+  background: $color-links;
+  color: $color-white;
+  border: 0;
+  width: auto;
+  display: inline-block;
+  padding: 1.2rem 3rem;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  position: relative;
+  cursor: pointer;
+  transition: 150ms linear background;
+  font-family: $font-base;
+
+  @media (max-width: $container-mobile) {
+    // Wrap long buttons on mobile
+    display: block;
+    text-align: center;
+  }
+
+  &:hover,
+  &:focus {
     color: $color-white;
-    border: 0;
-    width: auto;
-    display: inline-block;
-    padding: 1.2rem 3rem;
-    margin-bottom: 1rem;
-    text-decoration: none;
-    position: relative;
-    cursor: pointer;
-    transition: 150ms linear background;
-    font-family: $font-base;
+    background: darken($color-links, 15%);
+  }
 
-    @media (max-width: $container-mobile) {
-      // Wrap long buttons on mobile
-      display: block;
-      text-align: center;
-    }
+  &.button-ghost {
+    background-color: transparent;
+    border: 1px solid $color-links;
+    color: $color-links;
+  }
 
-    &:hover,
-    &:focus {
-      color: $color-white;
-      background: darken($color-links, 15%);
-    }
+  &.button-ghost:hover {
+    background-color: $color-links;
+    color: $color-white;
+  }
 
-    &.button-ghost {
-      background-color: transparent;
-      border: 1px solid $color-links;
-      color: $color-links;
-    }
+  &.btn-banner {
+    border-radius: 4rem;
+    padding: 1.4rem 8rem;
+  }
 
-    &.button-ghost:hover {
-      background-color: $color-links;
-      color: $color-white;
+  &.btn-primary {
+    background-color: $color-primary;
+    border: 1px solid $color-primary;
+
+    &:hover{
+      background-color: white;
+      color: $color-primary;
     }
   }
-}
+
+  &.btn-white {
+      background-color: white;
+      border: 1px solid white;
+      color: $color-primary;
+
+      &:hover{
+        background-color: $color-primary;
+        color: white;
+      }
+    }
+  }
 
 a,
 button,

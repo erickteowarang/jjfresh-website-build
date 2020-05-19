@@ -1,0 +1,85 @@
+.page-banner {
+    position: relative;
+	text-align: left;
+	height: 80vh;
+	color: white;
+    width: 100%;
+    
+    &.home-banner {
+        height: 100vh;
+
+        .container {
+            height: 100%;
+        }
+    }
+
+    @include mq("desktop") {
+        height: 620px; 
+
+        &.home-banner {
+            height: 800px;
+        }
+    }
+    
+    .banner-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -70%);
+        text-align: center;
+        width: 100%;
+        padding: 0 1.5rem;
+
+        @include mq("tablet-wide") {
+            padding: 0;
+            width: 640px;
+        }
+
+        &.homepage-banner {
+            text-align: left;
+            width: 100%;
+
+            @include mq("tablet-wide") {
+                position: relative;
+                left: 0;
+                transform: translate(0, -30%); 
+                width: 800px;
+            }
+
+            @include mq("desktop") {
+                transform: translate(0, -40%);
+            }
+            
+            h1 {
+                @include mq("desktop") {
+                    max-width: 700px;
+                    margin: 2rem 0 2.2rem;
+                }
+            }
+        }
+
+        h1 {
+            color: white;
+            font-weight: normal;
+            font-size: 4.2rem;
+            
+            @include mq("desktop") {
+                font-size: 6rem;
+            }
+        }
+    }
+
+    .tagline {
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        letter-spacing: 0.3rem;
+    }
+
+    .subtitle {
+        font-size: 1.6rem;
+
+        a {
+            text-decoration: underline;
+        }
+    }
+}
