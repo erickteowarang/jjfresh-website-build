@@ -19,13 +19,8 @@ $navheight-collapsed: 54px;
   top: 0;
   padding: 3rem 2rem;
 
-  @include mq("tablet-wide") {
-    padding-top: 4rem;
-  }
-
   @include mq("desktop") {
-    padding: 4rem; 
-    padding-top: 4rem;
+    padding: 3rem; 
   }
 
   a {

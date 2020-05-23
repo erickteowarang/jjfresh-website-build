@@ -125,7 +125,6 @@ function jjfresh_add_register_form_field(){
 		'last_name',
 		array(
 			'type'        => 'text',
-			'required'    => true, // just adds an "*"
 			'label'       => 'Last name'
 		),
 		( isset($_POST['last_name']) ? $_POST['last_name'] : '' )
@@ -139,9 +138,9 @@ function jjfresh_add_confirm_password_form_field() {
 		array(
 			'type'        => 'password',
 			'required'    => true, // just adds an "*"
-			'label'       => 'Confirm Password'
+      'label'       => 'Confirm Password',
 		),
-		( isset($_POST['password2']) ? $_POST['password2'] : '' )
+		''
 	);
 }
 
