@@ -17,15 +17,10 @@ $navheight-collapsed: 54px;
   justify-content: space-between;
   align-items: center;
   top: 0;
-  padding: 3rem 2rem;
-
-  @include mq("tablet-wide") {
-    padding-top: 4rem;
-  }
+  padding: 2rem;
 
   @include mq("desktop") {
-    padding: 4rem; 
-    padding-top: 4rem;
+    padding: 3rem; 
   }
 
   a {
@@ -152,16 +147,33 @@ $navheight-collapsed: 54px;
     }
   
     .menu-item a {
-      color: $color-grey;
+      color: $color-black;
   
       &:hover,
       &:focus {
-        color: $color-grey;
+        color: $color-black;
       }
     }
   
     .menu-item.btn-nav a {
       color: white;
+    }
+
+    .nav-toggle {
+      margin-top: 0.2rem;
+  
+      span {
+        color: black;
+  
+        .hamburger-inner {
+          background: black;
+  
+          &::before,
+          &::after {
+            background: black;
+          }
+        }
+      }
     }
 
     @media (max-width: $responsivenav - 1px) {
@@ -176,10 +188,6 @@ $navheight-collapsed: 54px;
     }
 
     .site-branding {
-      width: 129px;
-      height: 29px;
-      float: left;
-
       .white-logo {
         display: none;
       }
@@ -191,16 +199,8 @@ $navheight-collapsed: 54px;
       .sticky-logo {
         display: none;
       }
-
-      @media screen and (max-width: 340px) {
-        height: 40px;
-        width: 88px;
-      }
     
-      @include mq("tablet") {
-        width: 257px;
-        height: 57px;
-  
+      @include mq("tablet") {  
         .white-logo {
           display: none;
         }

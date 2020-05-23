@@ -4,9 +4,6 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
  *
- * @Date:   2019-10-15 12:30:02
- * @Last Modified by:   Roni Laukkarinen
- * @Last Modified time: 2020-03-17 10:17:21
  * @package jjfresh-website
  */
 
@@ -14,7 +11,7 @@ namespace JJ_Fresh;
 
 get_header();
 
-get_template_part( 'template-parts/hero', get_post_type() ); ?>
+?>
 
 <div id="content" class="content-area">
 	<main role="main" id="main" class="site-main">

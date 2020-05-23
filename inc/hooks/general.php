@@ -3,10 +3,6 @@
  * General hooks.
  *
  * @package jjfresh-website
- * @Author: Niku Hietanen
- * @Date: 2020-02-20 13:46:50
- * @Last Modified by: Niku Hietanen
- * @Last Modified time: 2020-02-20 13:48:02
  */
 
 namespace JJ_Fresh;

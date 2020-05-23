@@ -113,3 +113,14 @@ $enable-animations: false;
 .no-js .nav-toggle {
   display: none;
 }
+
+.site-branding {
+  width: 206px;
+  height: 46px;
+  float: left;
+
+  @include mq("tablet") {
+    width: 257px;
+    height: 57px;
+  }
+}

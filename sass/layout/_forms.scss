@@ -25,6 +25,7 @@ input[type="button"] {
   cursor: pointer;
   transition: 150ms linear background;
   font-family: $font-base;
+  text-decoration: none !important;
 
   @media (max-width: $container-mobile) {
     // Wrap long buttons on mobile

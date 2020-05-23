@@ -9,15 +9,7 @@ namespace JJ_Fresh;
 
 function entry_footer() {
   if ( 'post' === get_post_type() ) {
-    $categories_list = get_the_category_list( _x( ', ', 'Used between list items, there is a space after the comma', 'jjfresh-website' ) );
-    if ( $categories_list ) : ?>
-      <p class="cat"><?php echo get_the_category_list( _x( ', ', 'Used between list items, there is a space after the comma.', 'jjfresh-website' ) ); // phpcs:disable ?></p>
-    <?php	endif;
-
-    $tags_list = get_the_tag_list( '', esc_attr_x( ', ', 'list item separator', 'jjfresh-website' ) );
-    if ( $tags_list ) {
-      the_tags( '<ul class="tags"><li>', '</li><li>', '</li></ul>' );
-    }
+    echo '<p>Thanks for visiting our blog, check out our other posts below!</p>';
   }
 
   if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {

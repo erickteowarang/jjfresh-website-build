@@ -7,9 +7,6 @@
  * It is used to display a page when nothing more specific matches a query.
  * E.g., it puts together the home page when no home.php file exists.
  *
- * @Date:   2019-10-15 12:30:02
- * @Last Modified by:   Roni Laukkarinen
- * @Last Modified time: 2020-03-17 10:17:21
  * @package jjfresh-website
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  */

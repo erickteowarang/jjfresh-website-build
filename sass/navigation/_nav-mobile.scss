@@ -6,8 +6,8 @@
 // -----------------------------------------------------------
 $nav-background-color: rgba($color-default-background, .97);
 $nav-toggle: (
-  'color': $color-white,
-  'active-color': $color-white,
+  'color': $color-black,
+  'active-color': $color-black,
   );
 $nav-links: (
   'color': black,
@@ -55,7 +55,7 @@ $nav-open-from-direction: top;
     position: static;
 
     // Use the same color than navigation
-    background: $nav-background-color;
+    background: white;
   }
 
   // Disable scroll on html body when menu is opened.
@@ -72,7 +72,7 @@ $nav-open-from-direction: top;
         visibility: visible;
         opacity: 1;
         pointer-events: all;
-        background: $nav-background-color;
+        background: white;
 
         .menu-items {
           opacity: 1;
@@ -254,7 +254,7 @@ $nav-open-from-direction: top;
   -webkit-tap-highlight-color: rgba(#000, 0);
   border: 0;
   overflow: visible;
-  color: #fff;
+  color: black;
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -340,5 +340,24 @@ $nav-open-from-direction: top;
 
   &.is-active span {
     color: map-get($nav-toggle, 'active-color');
+  }
+}
+
+.homepage-nav-container {
+  .nav-toggle {
+    margin-top: 1.2rem;
+
+    span {
+      color: white;
+
+      .hamburger-inner {
+        background: white;
+
+        &::before,
+        &::after {
+          background: white;
+        }
+      }
+    }
   }
 }

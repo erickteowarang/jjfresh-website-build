@@ -12,5 +12,9 @@
 }
 
 .site-content {
-  padding-top: 8rem;
+  padding-top: 5rem;
+
+  @include mq("tablet") {
+    padding-top: 8rem;
+  }
 }

@@ -5,10 +5,6 @@
  * hooks and functions - please split those to their
  * own files under /inc and just require here.
  *
- * @Date:   2019-10-15 12:30:02
- * @Last Modified by:   Roni Laukkarinen
- * @Last Modified time: 2020-04-28 09:45:24
- *
  * @package jjfresh-website
  */
 

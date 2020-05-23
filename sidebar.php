@@ -2,10 +2,6 @@
 /**
  * The sidebar containing the main widget area
  * Implement your custom sidebar to this file.
- *
- * @Date:   2019-10-15 12:30:02
- * @Last Modified by:   Timi Wahalahti
- * @Last Modified time: 2019-10-15 14:35:42
  * @package jjfresh-website
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  */

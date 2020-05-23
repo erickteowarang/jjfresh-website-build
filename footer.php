@@ -4,9 +4,6 @@
  *
  * Contains the closing of the #content div and all content after.
  *
- * @Date:   2019-10-15 12:30:02
- * @Last Modified by:   Roni Laukkarinen
- * @Last Modified time: 2020-03-03 15:07:17
  * @package jjfresh-website
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  */
@@ -19,7 +16,7 @@ namespace JJ_Fresh;
 
 	<footer role="contentinfo" id="colophon" class="site-footer">
 
-    <?php get_template_part( 'template-parts/footer/demo-content' ); ?>
+    <?php get_template_part( 'template-parts/footer/footer-content' ); ?>
 
     <a href="#page" class="js-trigger top" data-mt-duration="300"><span class="screen-reader-text"><?php echo esc_html_e( 'Back to top', 'jjfresh-website' ); ?></span><?php include get_theme_file_path( '/svg/chevron-up.svg' ); ?></a>
 

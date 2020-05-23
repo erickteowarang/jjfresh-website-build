@@ -2,11 +2,6 @@
 /**
  * Gutenberg related settings
  *
- * @Author: Niku Hietanen
- * @Date: 2020-02-20 13:46:50
- * @Last Modified by:   Roni Laukkarinen
- * @Last Modified time: 2020-02-21 11:15:27
- *
  * @package jjfresh-website
  */
 

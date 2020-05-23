@@ -5,9 +5,6 @@
  * This is the template that displays the area of the page that contains both the current comments
  * and the comment form.
  *
- * @Date:   2019-10-15 12:30:02
- * @Last Modified by: Niku Hietanen
- * @Last Modified time: 2020-03-02 10:51:24
  * @package jjfresh-website
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  */

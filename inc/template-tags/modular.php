@@ -3,10 +3,6 @@
  * Single module builder
  *
  * @package jjfresh-website
- * @Author: Niku Hietanen
- * @Date: 2020-02-28 15:47:10
- * @Last Modified by: Niku Hietanen
- * @Last Modified time: 2020-03-02 10:36:44
  */
 
 namespace JJ_Fresh;
