@@ -40,27 +40,6 @@ get_header();
 
         </div><!-- .entry-content -->
 
-        <?php if ( get_edit_post_link() ) : ?>
-          <footer class="entry-footer">
-            <?php edit_post_link(
-              sprintf(
-                /* translators: %s: Name of current post. Only visible to screen readers */
-                wp_kses(
-                  __( 'Edit <span class="screen-reader-text">%s</span>', 'jjfresh-website' ),
-                  [
-                    'span' => [
-                      'class' => [],
-                    ],
-                  ]
-                ),
-                get_the_title()
-              ),
-              '<p class="edit-link">',
-              '</p>'
-            ); ?>
-          </footer><!-- .entry-footer -->
-        <?php endif; ?>
-
       </article><!-- #post-## -->
 
       <?php // If comments are open or we have at least one comment, load up the comment template.
