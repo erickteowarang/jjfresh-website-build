@@ -20,12 +20,12 @@ $navheight-collapsed: 54px;
   padding: 3rem 2rem;
 
   @include mq("tablet-wide") {
-    padding-top: 8.1rem;
+    padding-top: 4rem;
   }
 
   @include mq("desktop") {
     padding: 4rem; 
-    padding-top: 9.1rem;
+    padding-top: 4rem;
   }
 
   a {
@@ -144,7 +144,7 @@ $navheight-collapsed: 54px;
     }
 
     @include mq("desktop") {
-      padding: 3.5rem 4rem;
+      padding: 2.5rem 3rem;
     }
  
     .top-nav-menu {
@@ -176,8 +176,8 @@ $navheight-collapsed: 54px;
     }
 
     .site-branding {
-      width: 120px;
-      height: 55px;
+      width: 129px;
+      height: 29px;
       float: left;
 
       .white-logo {
@@ -198,8 +198,8 @@ $navheight-collapsed: 54px;
       }
     
       @include mq("tablet") {
-        width: 317px;
-        height: 21px;
+        width: 257px;
+        height: 57px;
   
         .white-logo {
           display: none;

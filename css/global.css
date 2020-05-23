@@ -3337,6 +3337,10 @@ form.search-form .search-submit {
   .block.block-page {
     min-height: 300px; } }
 
+.site-content {
+  padding-top: 80px;
+  padding-top: 8rem; }
+
 .cat-links,
 .tags-links {
   display: block; }
@@ -3802,12 +3806,15 @@ pre {
 .post {
   margin-bottom: 30px; }
 
-.entry-header .entry-title {
-  margin-bottom: .1em; }
-  .entry-header .entry-title a {
-    color: #3962c9; }
-    .entry-header .entry-title a:hover {
-      color: #159d94; }
+.entry-header {
+  margin-bottom: 30px;
+  margin-bottom: 3rem; }
+  .entry-header .entry-title {
+    margin-bottom: .1em; }
+    .entry-header .entry-title a {
+      color: #3962c9; }
+      .entry-header .entry-title a:hover {
+        color: #159d94; }
 
 .entry-meta {
   margin-bottom: 1em; }
@@ -3969,11 +3976,11 @@ ul.tags {
   padding: 3rem 2rem; }
   @media only screen and (min-width: 1024px) {
     .nav-container {
-      padding-top: 8.1rem; } }
+      padding-top: 4rem; } }
   @media only screen and (min-width: 1200px) {
     .nav-container {
       padding: 4rem;
-      padding-top: 9.1rem; } }
+      padding-top: 4rem; } }
   .nav-container a::after {
     content: none; }
   .nav-container .site-header {
@@ -4045,7 +4052,7 @@ ul.tags {
         padding-top: 0 !important; } }
     @media only screen and (min-width: 1200px) {
       .nav-container.nav-container-sticky {
-        padding: 3.5rem 4rem; } }
+        padding: 2.5rem 3rem; } }
     .nav-container.nav-container-sticky .top-nav-menu {
       display: none; }
     .nav-container.nav-container-sticky .menu-item a {
@@ -4061,8 +4068,8 @@ ul.tags {
       padding-top: 0;
       padding-bottom: 0; }
     .nav-container.nav-container-sticky .site-branding {
-      width: 120px;
-      height: 55px;
+      width: 129px;
+      height: 29px;
       float: left; }
       .nav-container.nav-container-sticky .site-branding .white-logo {
         display: none; }
@@ -4076,8 +4083,8 @@ ul.tags {
           width: 88px; } }
       @media only screen and (min-width: 768px) {
         .nav-container.nav-container-sticky .site-branding {
-          width: 317px;
-          height: 21px; }
+          width: 257px;
+          height: 57px; }
           .nav-container.nav-container-sticky .site-branding .white-logo {
             display: none; }
           .nav-container.nav-container-sticky .site-branding .blue-logo {

@@ -19,11 +19,7 @@ get_header();
 ?>
 
 <div id="content" class="content-area">
-  <main role="main" id="main" class="site-main">
-    <div class="hero-block">
-
-    </div>
-    
+  <main role="main" id="main" class="site-main">    
     <div class="block">
       <div class="container">
 
