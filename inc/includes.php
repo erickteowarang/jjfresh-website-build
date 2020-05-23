@@ -2,10 +2,6 @@
 /**
  * Include custom features etc.
  *
- * @Author: Niku Hietanen
- * @Date: 2020-02-18 15:07:17
- * @Last Modified by: Niku Hietanen
- * @Last Modified time: 2020-03-02 10:52:23
  * @package jjfresh-website
  */
 

@@ -3,10 +3,6 @@
  * Theme setup
  *
  * @package jjfresh-website
- * @Author: Niku Hietanen
- * @Date: 2020-02-20 13:46:50
- * @Last Modified by: Niku Hietanen
- * @Last Modified time: 2020-02-20 14:20:18
  **/
 
 namespace JJ_Fresh;

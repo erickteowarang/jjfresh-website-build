@@ -3,10 +3,6 @@
  * The base for a post type object
  *
  * @package jjfresh-website
- * @Author: Niku Hietanen
- * @Date: 2020-02-20 13:45:26
- * @Last Modified by: Niku Hietanen
- * @Last Modified time: 2020-02-20 13:45:58
  */
 
 namespace JJ_Fresh;

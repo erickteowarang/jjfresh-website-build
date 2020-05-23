@@ -7,9 +7,6 @@
  * and that other 'pages' on your WordPress site may use a
  * different template.
  *
- * @Date:   2019-10-15 12:30:02
- * @Last Modified by:   Roni Laukkarinen
- * @Last Modified time: 2020-01-16 09:39:53
  * @package jjfresh-website
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  */

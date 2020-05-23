@@ -2,10 +2,6 @@
 /**
  * A template base for modular content
  *
- * @Author: Niku Hietanen
- * @Date: 2020-02-28 15:38:00
- * @Last Modified by: Niku Hietanen
- * @Last Modified time: 2020-02-28 16:34:01
  * @package jjfresh-website
  */
 
