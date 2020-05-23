@@ -8,11 +8,6 @@ We try to achieve as classic WordPress theme structure as possible to make it po
 theme
 ├── 404.php                         # → Default "not found" page
 ├── archive.php                     # → Default archive template
-├── bin/                            # → Scripts
-│   ├── air-move-in.sh              # → A script for moving all dev files back to the theme
-│   ├── air-move-out.sh              # → A script for moving all dev files out of the theme for testing with Theme Check plugin
-│   ├── air-pack.sh                  # → A script that makes a package for WordPress Theme Directory
-│   ├── newtheme.sh                  # → The start script for creating YOUR own theme out of jjfresh-website
 ├── comments.php                    # → Default comments template (can be deleted if not needed)
 ├── css/                            # → CSS files for production (never edit)
 │   ├── global.css                  # → Unminified, stylefmtd CSS file
@@ -58,7 +53,7 @@ theme
 │   ├── features/                   # → Fuctionality styles
 │   │   ├── _breadcrumbs.scss       # → Styles for breadcrumb trail WordPress plugin
 │   │   ├── _gallery.scss           # → Default WordPress gallery feature styles
-│   │   ├── _lazyload.scss          # → Styles for air-helper lazyload feature (lazyload.js needed)
+│   │   ├── _lazyload.scss          # → Styles for lazyload feature (lazyload.js needed)
 │   │   ├── _magnific-popup.scss    # → Defaults for magnific popup
 │   │   └── _top.scss               # → Back to top styles
 │   ├── layout/                     # → Fuctionality styles
