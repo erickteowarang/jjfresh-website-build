@@ -4,14 +4,10 @@
  *
  * This is the template that displays all of the <head> section and everything up until <div id="content">
  *
- * @Date:   2019-10-15 12:30:02
- * @Last Modified by:   Roni Laukkarinen
- * @Last Modified time: 2020-02-21 13:30:49
- * @package jjfresh-website
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
+ *
+ * @package JJ_Fresh
  */
-
-namespace Air_Light;
 
 ?>
 <!doctype html>
@@ -27,17 +23,41 @@ namespace Air_Light;
 <body <?php body_class( 'no-js' ); ?>>
   <?php wp_body_open(); ?>
   <div id="page" class="site">
-
     <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'jjfresh-website' ); ?></a>
+    <?php if( get_field('banner_image') ): ?>
+    
+    <header id="masthead" class="site-header <?php if ( is_front_page() ) : ?>home-banner<?php endif; ?> page-banner" 
+      role="banner" 
+      style="background: url(<?php the_field('banner_image'); ?>); 
+          background-size: cover; 
+          background-position: center center;"
+    >
+    
+    <?php else: ?>
 
-    <div class="nav-container">
-      <header class="site-header" role="banner">
-
+    <header id="masthead" class="site-header dark-theme" role="banner">
+  
+    <?php endif; ?>
+      <div class="nav-container <?php if ( is_front_page() ) : ?>homepage-nav-container<?php endif; ?>">
         <?php get_template_part( 'template-parts/header/branding' ); ?>
 
         <?php get_template_part( 'template-parts/header/navigation' ); ?>
+      </div>
+      
+      <?php if (get_field('banner_title')) : ?>
 
-      </header>
-    </div><!-- .nav-container -->
+      <div class="container container-wide">
+        <div class="banner-content <?php if ( is_front_page() ) : ?>homepage-banner<?php endif; ?>">
+          <div class="tagline"><?php the_field('banner_tagline'); ?></div>
+          <h1><?php the_field('banner_title'); ?></h1>
+          <?php if(get_field('banner_link') ) : ?>
+            <a href="<?php the_field('banner_link'); ?>" class="btn btn-ghost btn-banner"><?php the_field('banner_btn_text'); ?></a>
+          <?php endif; ?>
+          <div class="subtitle"><?php the_field('banner_subtitle'); ?></div>
+        </div>
+      </div>
+      
+      <?php endif; ?>
+    </header>
 
-    <div class="site-content">
+  <div class="site-content">

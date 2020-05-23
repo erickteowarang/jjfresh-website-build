@@ -14,13 +14,13 @@
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  */
 
-namespace Air_Light;
+namespace JJ_Fresh;
 
 the_post();
 
 get_header();
 
-get_template_part( 'template-parts/hero', get_post_type() ); ?>
+?>
 
 <div id="content" class="content-area">
   <main role="main" id="main" class="site-main">

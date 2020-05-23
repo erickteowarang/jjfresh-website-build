@@ -3,41 +3,165 @@ $navheight-mobile: 54px;
 $navheight-collapsed: 54px;
 
 .site-header {
-  transition: all .55s ease;
+  transition: all .5s ease;
 }
 
 .nav-container {
   position: fixed;
-  transition: all .55s ease;
-  height: $navheight-mobile;
-  width: 100%;
+  transition: all .5s ease;
+  background: #ffffff;
+  width: 100%; 
   z-index: 9999;
   overflow: visible;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  padding: 3rem 2rem;
+
+  @include mq("tablet-wide") {
+    padding-top: 4rem;
+  }
+
+  @include mq("desktop") {
+    padding: 4rem; 
+    padding-top: 4rem;
+  }
+
+  a {
+    &::after {
+      content: none;
+    }
+  }
 
   .site-header {
     height: auto;
   }
 
-  @media (min-width: $responsivenav) {
-    height: $navheight-expanded;
+  .top-nav-menu {
+    position: absolute;
+    background-color: $color-primary;
+    height: 51px;
+    text-align: center;
+    justify-content: center;
+    top: 0;
+    width: 100%;
+    left: 0;
+
+    @include mq("desktop") {
+      padding: 1.5rem 0;
+    }
+  }
+
+  .menu-item a {
+    color: $color-grey;
+
+    &:hover,
+    &:focus {
+      color: $color-grey;
+    }
+  }
+
+  .menu-item.btn-nav a {
+    color: white;
+  }
+
+  .site-branding {
+    .white-logo {
+      display: none;
+    }
+
+    .blue-logo {
+      display: block;
+    }
+
+    .sticky-logo {
+      display: none;
+    }
+  }
+
+  &.homepage-nav-container {
+    background: transparent;
+    align-items: flex-start;
+
+    .site-branding {
+      .white-logo {
+        display: block;
+      }
+  
+      .blue-logo {
+        display: none;
+      }
+    }
+
+    .top-nav-menu {
+      position: relative;
+      background: transparent;
+      height: auto;
+      color: white;
+      padding-bottom: 3.5rem;
+
+      a {
+        color: white;
+      }
+    }
+
+    .menu-item a {
+      color: white;
+    }
+
+    @include mq("tablet-wide") {
+      padding-top: 3rem;
+
+      .top-nav-menu {
+        display: none;
+      }
+    }
+
+    @include mq("desktop") {
+      padding: 4rem; 
+
+      .top-nav-menu {
+        display: flex;
+        padding-top: 0;
+      }
+    }
   }
 
   &.nav-container-sticky {
-    background: #222;
     position: fixed;
+    background-color: white;
     top: 0;
     left: 0;
+    padding: 3rem 2rem;
+    align-items: center;
+    box-shadow: 0px 1px 10px #999;
 
-    .site-header {
-      padding-top: 5px;
-      padding-bottom: 5px;
+    @include mq("tablet-wide") {
+      .menu-items {
+        padding-top: 0 !important;
+      }
     }
 
-    .site-title svg {
-      position: relative;
-      top: 5px;
-      width: 32px;
-      height: 32px;
+    @include mq("desktop") {
+      padding: 2.5rem 3rem;
+    }
+ 
+    .top-nav-menu {
+      display: none;
+    }
+  
+    .menu-item a {
+      color: $color-grey;
+  
+      &:hover,
+      &:focus {
+        color: $color-grey;
+      }
+    }
+  
+    .menu-item.btn-nav a {
+      color: white;
     }
 
     @media (max-width: $responsivenav - 1px) {
@@ -51,21 +175,52 @@ $navheight-collapsed: 54px;
       padding-bottom: 0;
     }
 
-    .nav-toggle {
-      top: 5px;
-      right: 5px;
-    }
+    .site-branding {
+      width: 129px;
+      height: 29px;
+      float: left;
 
-    @media (min-width: $responsivenav) {
-      height: $navheight-collapsed;
+      .white-logo {
+        display: none;
+      }
+    
+      .blue-logo {
+        display: block;
+      }
+
+      .sticky-logo {
+        display: none;
+      }
+
+      @media screen and (max-width: 340px) {
+        height: 40px;
+        width: 88px;
+      }
+    
+      @include mq("tablet") {
+        width: 257px;
+        height: 57px;
+  
+        .white-logo {
+          display: none;
+        }
+    
+        .blue-logo {
+          display: none;
+        }
+  
+        .sticky-logo {
+          display: block;
+        }
+      }
     }
 
     // Hide when scrolling down, show again when scrolling up
-    &.scrolling-down {
-      @media (min-width: $responsivenav) {
-        margin-top: -$navheight-expanded;
-      }
-    }
+    // &.scrolling-down {
+    //   @media (min-width: $responsivenav) {
+    //     margin-top: -$navheight-expanded;
+    //   }
+    // }
 
     &.scrolling-up {
       top: 0;

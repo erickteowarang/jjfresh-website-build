@@ -9,7 +9,7 @@
  * @Last Modified time: 2020-02-20 13:48:02
  */
 
-namespace Air_Light;
+namespace JJ_Fresh;
 
 /**
  * Register widget area.

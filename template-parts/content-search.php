@@ -9,7 +9,7 @@
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  */
 
-namespace Air_Light;
+namespace JJ_Fresh;
 
 ?>
 

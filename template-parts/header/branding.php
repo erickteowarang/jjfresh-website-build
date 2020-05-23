@@ -5,31 +5,21 @@
  * @package jjfresh-website
  */
 
-namespace Air_Light;
-
+namespace JJ_Fresh;
+ 
 ?>
 
       <div class="site-branding">
-
-        <?php if ( is_front_page() && is_home() ) : ?>
-
-        <h1 class="site-title">
+        <p class="site-title">
           <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
             <span class="screen-reader-text"><?php bloginfo( 'name' ); ?></span>
-            <?php include get_theme_file_path( THEME_SETTINGS['logo'] ); ?>
+            <img class="white-logo" alt="JJFresh White Logo" src="<?php bloginfo('template_url'); ?>/images/jjfresh-white.png">
+            <img class="blue-logo" alt="JJFresh Green Logo" src="<?php bloginfo('template_url'); ?>/images/jjfresh-green.png">
+            <img class="sticky-logo" alt="JJFresh Green Logo" src="<?php bloginfo('template_url'); ?>/images/jjfresh-green.png">
           </a>
-        </h1>
+        </p>
 
-        <?php else : ?>
-
-          <p class="site-title">
-            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-              <span class="screen-reader-text"><?php bloginfo( 'name' ); ?></span>
-              <?php include get_theme_file_path( THEME_SETTINGS['logo'] ); ?>
-            </a>
-          </p>
-
-        <?php endif;
+        <?php
 
         $description = get_bloginfo( 'description', 'display' );
         if ( $description || is_customize_preview() ) : ?>

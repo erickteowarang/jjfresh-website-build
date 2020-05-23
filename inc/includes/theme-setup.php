@@ -9,7 +9,7 @@
  * @Last Modified time: 2020-02-20 14:20:18
  **/
 
-namespace Air_Light;
+namespace JJ_Fresh;
 
 function theme_setup() {
 
@@ -107,4 +107,49 @@ function build_theme_support() {
       'caption',
     ]
   );
+}
+ 
+function jjfresh_add_register_form_field(){
+ 
+	woocommerce_form_field(
+		'first_name',
+		array(
+			'type'        => 'text',
+			'required'    => true, // just adds an "*"
+			'label'       => 'First name'
+		),
+		( isset($_POST['first_name']) ? $_POST['first_name'] : '' )
+  );
+  
+  woocommerce_form_field(
+		'last_name',
+		array(
+			'type'        => 'text',
+			'required'    => true, // just adds an "*"
+			'label'       => 'Last name'
+		),
+		( isset($_POST['last_name']) ? $_POST['last_name'] : '' )
+  );
+ 
+}
+
+function jjfresh_add_confirm_password_form_field() {
+  woocommerce_form_field(
+		'password2',
+		array(
+			'type'        => 'password',
+			'required'    => true, // just adds an "*"
+			'label'       => 'Confirm Password'
+		),
+		( isset($_POST['password2']) ? $_POST['password2'] : '' )
+	);
+}
+
+function registration_errors_validation($reg_errors, $sanitized_user_login, $reg_email) {
+	global $woocommerce;
+	extract( $_POST );
+	if ( strcmp( $password, $password2 ) !== 0 ) {
+		return new \WP_Error( 'registration-error', __( 'Passwords do not match.', 'woocommerce' ) );
+	}
+	return $reg_errors;
 }

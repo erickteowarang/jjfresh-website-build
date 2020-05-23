@@ -12,6 +12,7 @@
 @import '../helpers/background';
 @import '../helpers/grid';
 @import '../helpers/typography';
+@import '../helpers/mixins-master';
 
 @import 'accessibility';
 
@@ -33,15 +34,16 @@
 @import '../features/gallery';
 @import '../features/lazyload';
 @import '../features/notices';
+@import '../features/banner';
 
 // Views
-@import '../views/front-page';
+@import '../views/front-page'; 
 @import '../views/page';
 @import '../views/blog';
 @import '../views/comments';
 
 // Extra building blocks
-// @import '../extra/sticky-nav';
+@import '../extra/sticky-nav';
 // @import '../layout/sidebar';
 // @import '../layout/woocommerce';
 // @import '../extra/slick';

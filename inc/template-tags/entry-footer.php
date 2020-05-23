@@ -5,7 +5,7 @@
  * @package jjfresh-website
  */
 
-namespace Air_Light;
+namespace JJ_Fresh;
 
 function entry_footer() {
   if ( 'post' === get_post_type() ) {

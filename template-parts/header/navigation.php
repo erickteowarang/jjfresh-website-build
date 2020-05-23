@@ -5,7 +5,7 @@
  * @package air-theme
  */
 
-namespace Air_Light;
+namespace JJ_Fresh;
 
 ?>
 

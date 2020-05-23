@@ -10,7 +10,7 @@
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  */
 
-namespace Air_Light;
+namespace JJ_Fresh;
 
 if ( ! is_active_sidebar( 'sidebar-1' ) ) {
   return;
