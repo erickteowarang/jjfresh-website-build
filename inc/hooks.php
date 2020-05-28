@@ -33,3 +33,4 @@ add_filter( 'use_block_editor_for_post_type', __NAMESPACE__ . '\use_block_editor
 add_action( 'woocommerce_register_form_start', __NAMESPACE__ . '\jjfresh_add_register_form_field');
 add_filter( 'woocommerce_registration_errors', __NAMESPACE__ . '\registration_errors_validation', 10, 3);
 add_action( 'woocommerce_register_form', __NAMESPACE__ . '\jjfresh_add_confirm_password_form_field');
+add_filter( 'woocommerce_valid_order_statuses_for_cancel', __NAMESPACE__ . '\filter_valid_order_statuses_for_cancel', 20, 2 );
